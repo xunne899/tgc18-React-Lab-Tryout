@@ -4,9 +4,11 @@ import './style.css';
 import Alert from "./alert.js"
 import NumberBox from './NumberBox';
 import Ticklebox from './TickleBox';
+import Numplusminus from './NumPlusMinus';
+import Dice from './Dice';
 
 function sayGoodbye() {
-  return "Goodbye"
+return "Goodbye"
 }
 
 function displayHeader(){
@@ -15,18 +17,17 @@ return <h2>About me</h2>
 
 
 function Imageframe(props){
-  return (<img src={props.ImageFile} alt={props.AltText}/>)
-  
+return (<img src={props.ImageFile} alt={props.AltText}/>)  
 }
 
 
 function DisplayMessage(props){
-  return( <div>{props.whatever_message}</div> )
+return( <div>{props.whatever_message}</div> )
 }
 
 function Sum (props){
-  let total = props.e1 + props.e2;
-  return (<h2>{total}</h2>)
+let total = props.e1 + props.e2;
+return (<h2>{total}</h2>)
 }
 
 function App() {
@@ -45,8 +46,12 @@ function App() {
    <Alert message="wakey wakey rise and shine the weather is fine"/>
 
    <div>
-    <NumberBox initial={15}/>
+    <NumberBox initial={0}/>
+   <Numplusminus />
+   <Ticklebox/>
+   <Dice/>
    </div>
+   
     {/* <img src={require('./logo.svg').default} alt="logo"/> */}
     <img src={require('./code.png')} alt="code"/>
     </React.Fragment>

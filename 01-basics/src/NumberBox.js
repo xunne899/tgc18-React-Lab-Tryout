@@ -5,13 +5,30 @@ export default class NumberBox extends React.Component{
     state = {
         count: this.props.initial
     }
+    
+    initialnum =() =>{
+        this.setState({
+            count : 0
+        })
+    }
 
     click = () =>{
-        alert("clicked")
+       this.setState({
+        count: this.state.count + 1
+       })
     }
-    render() {
+
+    reset = () =>{
+        this.setState({
+            count:""
+        })
+    } 
+    render(){
         return (
-            <div onClick={this.click} style={{
+            <div 
+                onMouseEnter = {this.initialnum}
+                onMouseOut = {this.reset}
+                onClick={this.click} style={{
                 border:"1px solid black",
                 padding:"10px",
                 width:"20px"
