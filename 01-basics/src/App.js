@@ -2,6 +2,8 @@
 import React from 'react';
 import './style.css';
 import Alert from "./alert.js"
+import NumberBox from './NumberBox';
+import Ticklebox from './TickleBox';
 
 function sayGoodbye() {
   return "Goodbye"
@@ -38,9 +40,13 @@ function App() {
 
    
     <Imageframe ImageFile = {require('./dog.jpg')} alt="cute dog" />
-    <DisplayMessage whatever_message="Practicing react there you go"/>
+    <DisplayMessage whatever_message="Practicing react where ever you go"/>
    <Sum e1={30} e2={20}/>
    <Alert message="wakey wakey rise and shine the weather is fine"/>
+
+   <div>
+    <NumberBox initial={15}/>
+   </div>
     {/* <img src={require('./logo.svg').default} alt="logo"/> */}
     <img src={require('./code.png')} alt="code"/>
     </React.Fragment>
