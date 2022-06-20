@@ -25,14 +25,18 @@ export default class NumberBox extends React.Component{
     } 
     render(){
         return (
+            <React.Fragment>
             <div 
                 onMouseEnter = {this.initialnum}
                 onMouseOut = {this.reset}
                 onClick={this.click} style={{
                 border:"1px solid black",
+                fontSize: `${10 + this.state.count * 5}px`,
                 padding:"10px",
                 width:"20px"
             }}>{this.state.count}</div>
+            { this.state.count % 2 === 0 ? <p>Number is even</p> : null}
+            </React.Fragment>
         )
     }
 }
