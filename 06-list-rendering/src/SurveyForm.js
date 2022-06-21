@@ -12,19 +12,19 @@ export default class SurveyForm extends React.Component {
 
     colours = [
         {
-            'display':'红',
+            'display':'Red',
             'value':'red'
         },
         {
-            'display':'青',
+            'display':'Green',
             'value': 'green'
         },
         {
-            'display':'蓝',
+            'display':'Blue',
             'value':'blue'
         },
         {
-            'display': '黄',
+            'display': 'Yellow',
             'value': 'yellow'
         }
     ]

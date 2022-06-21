@@ -2,12 +2,14 @@ import logo from './logo.svg';
 import './App.css';
 import SurveyForm from './SurveyForm';
 
-function App() {
+
+ function App() {
   return (
     <div className="App">
-     <SurveyForm/>
+<SurveyForm/>
     </div>
   );
 }
 
-export default App;
+
+export default App
