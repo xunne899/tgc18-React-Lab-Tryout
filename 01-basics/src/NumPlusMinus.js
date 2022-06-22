@@ -36,20 +36,21 @@ export default class Numplusminus extends React.Component{
     }
 
     render(){
-        let backgroundColor = "grey";
+        // let backgroundColor = "grey";
 
-        if(this.state.count <= 10 || this.state.count >= 0){
-            backgroundColor  = "purple"
-        }
+        // if(this.state.count <= 10 || this.state.count >= 0){
+        //     backgroundColor  = "purple"
+        // }
 
-        if(this.state.count > 10){
-            backgroundColor  = "green"
-        }
+        // if(this.state.count > 10){
+        //     backgroundColor  = "green"
+        // }
 
-        if(this.state.count < 0){
-            backgroundColor  = "red"
-        }
-    
+        // if(this.state.count < 0){
+        //     backgroundColor  = "red"
+        // }
+
+
      return (
         <React.Fragment>
                 <div
